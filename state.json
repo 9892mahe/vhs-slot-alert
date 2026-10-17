@@ -1,0 +1,33 @@
+{
+  "courses": {
+    "MH4.04-866-H": {
+      "district": "Marzahn-Hellersdorf",
+      "free": "belegt",
+      "id": "794262",
+      "note": "Aufnahme in Warteliste möglich",
+      "nr": "MH4.04-866-H",
+      "start": "09.12.2026 13:30 Uhr",
+      "title": "Sprachtest zur Einbürgerung - Anmeldeschluss 07.12.2026"
+    },
+    "Pa86030H": {
+      "district": "Pankow",
+      "free": "belegt",
+      "id": "788377",
+      "note": "Aufnahme in Warteliste möglich",
+      "nr": "Pa86030H",
+      "start": "03.12.2026 13:00 Uhr",
+      "title": "Sprachtest zur Einbürgerung"
+    },
+    "Pa86031H": {
+      "district": "Pankow",
+      "free": "belegt",
+      "id": "788378",
+      "note": "Aufnahme in Warteliste möglich",
+      "nr": "Pa86031H",
+      "start": "04.12.2026 13:00 Uhr",
+      "title": "Sprachtest zur Einbürgerung"
+    }
+  },
+  "fail_count": 0,
+  "initialized": true
+}
