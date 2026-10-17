@@ -1,0 +1,51 @@
+name: Exam slot alert
+
+on:
+  schedule:
+    # Every 15 minutes (GitHub may delay runs by a few minutes at busy times).
+    # PRIVATE repository? Change to "*/30 * * * *" to stay inside the free minutes.
+    - cron: "*/15 * * * *"
+  workflow_dispatch:   # adds a "Run workflow" button for manual tests
+
+permissions:
+  contents: write      # lets the bot save state.json back to the repository
+
+concurrency:
+  group: exam-alert
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install playwright requests
+
+      - name: Check VHS for free slots
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          SEARCH_TERM: "Sprachtest zur Einbürgerung"
+          WINDOW_START: "2026-12-01"
+          WINDOW_END: "2027-01-31"
+          # Manual runs always send a status summary to Telegram
+          FORCE_SUMMARY: ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+        run: python check_slots.py
+
+      - name: Save state
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain state.json)" ]; then
+            git config user.name "exam-alert-bot"
+            git config user.email "exam-alert-bot@users.noreply.github.com"
+            git add state.json
+            git commit -m "Update slot state"
+            git push
+          fi
