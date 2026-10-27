@@ -26,6 +26,15 @@
       "nr": "Pa86031H",
       "start": "04.12.2026 13:00 Uhr",
       "title": "Sprachtest zur Einbürgerung"
+    },
+    "TS404.939H": {
+      "district": "Tempelhof-Schöneberg",
+      "free": "> 2",
+      "id": "785664",
+      "note": "",
+      "nr": "TS404.939H",
+      "start": "02.12.2026 13:00 Uhr",
+      "title": "Sprachtest zur Einbürgerung B1"
     }
   },
   "fail_count": 0,
