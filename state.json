@@ -35,6 +35,24 @@
       "nr": "Pa86031H",
       "start": "04.12.2026 13:00 Uhr",
       "title": "Sprachtest zur Einbürgerung"
+    },
+    "Pa86032F": {
+      "district": "Pankow",
+      "free": "> 2",
+      "id": "820530",
+      "note": "",
+      "nr": "Pa86032F",
+      "start": "08.01.2027 13:00 Uhr",
+      "title": "Sprachtest zur Einbürgerung"
+    },
+    "Pa86033F": {
+      "district": "Pankow",
+      "free": "> 2",
+      "id": "820531",
+      "note": "",
+      "nr": "Pa86033F",
+      "start": "22.01.2027 13:00 Uhr",
+      "title": "Sprachtest zur Einbürgerung"
     }
   },
   "fail_count": 0,
