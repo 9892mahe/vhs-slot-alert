@@ -53,6 +53,15 @@
       "nr": "Pa86033F",
       "start": "22.01.2027 13:00 Uhr",
       "title": "Sprachtest zur Einbürgerung"
+    },
+    "Re400092-ST": {
+      "district": "Reinickendorf",
+      "free": "> 2",
+      "id": "807948",
+      "note": "",
+      "nr": "Re400092-ST",
+      "start": "03.12.2026 13:15 Uhr",
+      "title": "Sprachtest zur Einbürgerung"
     }
   },
   "fail_count": 0,
