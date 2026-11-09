@@ -18,15 +18,6 @@
       "start": "02.12.2026 13:30 Uhr",
       "title": "Sprachtest zur Einbürgerung"
     },
-    "Nk-D904c7": {
-      "district": "Neukölln",
-      "free": "belegt",
-      "id": "820861",
-      "note": "nur mit Beratung durch ausf. VHS buchbar",
-      "nr": "Nk-D904c7",
-      "start": "01.12.2026 13:30 Uhr",
-      "title": "Sprachtest zur Einbürgerung"
-    },
     "Pa86030H": {
       "district": "Pankow",
       "free": "belegt",
@@ -73,6 +64,6 @@
       "title": "Sprachtest zur Einbürgerung"
     }
   },
-  "fail_count": 1,
+  "fail_count": 0,
   "initialized": true
 }
